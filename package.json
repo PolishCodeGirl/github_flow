@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/PolishCodeGirl/github_flow/issues"
   },
-  "homepage": "https://github.com/PolishCodeGirl/github_flow#readme"
+  "homepage": "https://github.com/PolishCodeGirl/github_flow#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
