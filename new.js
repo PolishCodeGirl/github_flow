@@ -15,12 +15,10 @@ axios(url)
 
     $(".gs-c-promo-body", html).each(function () {
       const title = $(this).find("h3").text();
-      const description = $(this).find("p").text();
       const url = $(this).find("a").attr("href");
 
       articles.push({
         title,
-        description,
         url,
       });
     });
