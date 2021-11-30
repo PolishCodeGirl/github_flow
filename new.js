@@ -1,11 +1,11 @@
-const PORT = 9000;
+const PORT = 9001;
 const axios = require("axios");
 const cheerio = require("cheerio");
 const express = require("express");
 
 const app = express();
 
-const url = "https://www.theguardian.com/uk";
+const url = "https://www.bbc.com/news";
 
 axios(url)
   .then((response) => {
@@ -13,12 +13,14 @@ axios(url)
     const $ = cheerio.load(html);
     const articles = [];
 
-    $(".fc-item__title", html).each(function () {
-      const title = $(this).text();
+    $(".gs-c-promo-body", html).each(function () {
+      const title = $(this).find("h3").text();
+      const description = $(this).find("p").text();
       const url = $(this).find("a").attr("href");
 
       articles.push({
         title,
+        description,
         url,
       });
     });
