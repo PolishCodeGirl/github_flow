@@ -1,11 +1,11 @@
-### Purpose
+## Purpose
 
 Please include a ticket link if applicable
 Shortly describe why you are creating this PR.
 Give your readers context.
 Don't assume familiarity with the history.
 
-### Approach
+## Approach
 
 Tell your reviewers how you ended up with this solution.
 They can see _what_ was changed. Tell them _why_.
